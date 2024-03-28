@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import contact_me from "../components/contact_me.vue";
+import ContactMe from "./ContactMe.vue";
 
 const sidebarActive = ref(false);
 const toggleSidebar = () => {
@@ -16,7 +16,6 @@ const toggleSidebar = () => {
     </head>
 
     <body>
-        <div><contact_me> </contact_me></div>
         <nav class="sidebar" :class="{ active: sidebarActive }">
             <div class="logo-menu">
                 <h2 class="logo">IANIAN4302</h2>
@@ -74,10 +73,6 @@ const toggleSidebar = () => {
     box-sizing: border-box;
 }
 body {
-    min-height: 100vh;
-    background: url("../assets/background_1.png") no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .sidebar {
     position: fixed;
