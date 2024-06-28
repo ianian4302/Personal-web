@@ -1,5 +1,5 @@
 <script setup>
-import MainPage from "./MainPage.vue";
+import PageManager from "./PageManager.vue";
 </script>
 <script></script>
 
@@ -7,7 +7,7 @@ import MainPage from "./MainPage.vue";
     <body>
         <header></header>
         <main>
-            <MainPage />
+            <PageManager />
         </main>
     </body>
 </template>
