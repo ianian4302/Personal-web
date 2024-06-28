@@ -30,6 +30,5 @@ coverage
 *.tsbuildinfo
 
 # Firebase cache
-src/firebase/
 .firebaserc
 firebase.json
