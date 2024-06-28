@@ -1,36 +1,55 @@
+<script setup>
+import ContactInfoBox from "./ContactInfoBox.vue";
+</script>
 <template>
-    <div class="test">
-        <div class="contact_field">
-            <div class="conf_field">
-                <div class="conf_inf">陳文彥 WEN-YEN CHEN</div>
-                <div class="conf_inf">phone : 0966284266</div>
-                <div class="conf_inf">email : ianian4302@gmail.com</div>
-            </div>
+    <div id="app">
+        <div class="content">
+            <ContactInfoBox />
         </div>
+        <div class="photo">
+            <img src="@/assets/your-photo.jpg" alt="Your Photo" />
+        </div>
+        <SkillList />
     </div>
 </template>
 
+<script></script>
+
 <style scoped>
-.test {
-    padding-top: 15%;
-}
-
-.contact_field {
+#app {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    font-size: 20px;
-    font-weight: 500;
-    white-space: nowrap;
-    margin: 0 20% 0;
-    border-radius: 10px;
-    height: 10%;
-    backdrop-filter: blur(2px);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-    padding: 60px 250px;
-
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
 }
-.conf_inf {
-    color: white;
+
+.content {
+    text-align: center;
+    z-index: 1;
+}
+
+.photo {
+    position: absolute;
+    top: 10%;
+    right: 50% - 100px;
+    z-index: 0;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: blur(0);
+    transition: filter 0.5s ease;
+}
+
+.photo img:hover {
+    filter: blur(5px);
 }
 </style>
