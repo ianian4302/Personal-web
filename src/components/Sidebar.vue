@@ -25,26 +25,32 @@ const toggleSidebar = () => {
                 <li class="list-item active">
                     <a href="#">
                         <i class="bx bx-grid-alt"></i>
-                        <span class="link-name" style="--i: 1"> DashBoard</span>
+                        <span class="link-name" style="--i: 1">
+                            Intrduction</span
+                        >
                     </a>
                 </li>
 
                 <li class="list-item">
                     <a href="#">
                         <i class="bx bx-user"></i>
-                        <span class="link-name" style="--i: 2"> User</span>
+                        <span class="link-name" style="--i: 2">
+                            Experience</span
+                        >
                     </a>
                 </li>
                 <li class="list-item">
                     <a href="#">
                         <i class="bx bx-message-detail"></i>
-                        <span class="link-name" style="--i: 3"> Messages</span>
+                        <span class="link-name" style="--i: 3"> Honor</span>
                     </a>
                 </li>
                 <li class="list-item">
                     <a href="#">
                         <i class="bx bx-cog"></i>
-                        <span class="link-name" style="--i: 4"> Setting</span>
+                        <span class="link-name" style="--i: 4">
+                            Contact information</span
+                        >
                     </a>
                 </li>
                 <li class="list-item">
@@ -57,7 +63,7 @@ const toggleSidebar = () => {
                     <a href="#">
                         <i class="bx bx-help-circle"></i>
                         <span class="link-name" style="--i: 7">
-                            File manager</span
+                            Contribute</span
                         >
                     </a>
                 </li>
